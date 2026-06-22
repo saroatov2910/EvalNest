@@ -1,0 +1,18 @@
+אם services:
+  client:
+    build: ./Client
+    ports:
+      - "3000:3000"
+    env_file:
+      - ./Client/.env.local
+    depends_on:
+      - server
+
+  server:
+    build: ./Server
+    ports:
+      - "8000:8000"
+    env_file:
+      - ./Server/.env
+    volumes:
+      - ./Server:/app
