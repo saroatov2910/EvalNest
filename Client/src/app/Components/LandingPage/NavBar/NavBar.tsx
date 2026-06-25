@@ -1,19 +1,20 @@
 import Image from 'next/image';
-import Logo from '../../../IMG/Logo.jpeg';
+import { useRouter } from 'next/navigation';
 
 // icons
+import Logo from '../../../IMG/Logo.jpeg';
 import { RxHamburgerMenu } from 'react-icons/rx';
 
 export default function NavBar() {
+  const router = useRouter();
 
-
-// functions
-const hamburgerMenuClick = () => {
+  // functions
+  const hamburgerMenuClick = () => {
     alert('Hamburger menu clicked!');
-}
-const SignInClick = () => {
-    alert('Sign In clicked!');
-}
+  };
+  const SignInClick = () => {
+    router.push('/Components/User/UserHomePage');
+  };
   return (
     <div>
       <nav className='flex bg-white text-black py-4 w-full'>
@@ -49,5 +50,3 @@ const SignInClick = () => {
 }
 
 NavBar.propTypes = {};
-
-
