@@ -1,8 +1,7 @@
 import React from 'react'
 import NavBar from './NavBar/NavBar'
 import Body from './Body/Body'
-import Footer from './Footer/Footer'
-import UserHomePage from '../User/UserHomePage/page'
+import Footer from '../Footer/Footer'
 
 function LandingPage() {
 
@@ -12,7 +11,6 @@ function LandingPage() {
     <div>
       <NavBar />
       <Body /> 
-      <Footer />
     </div>
   )
 }
