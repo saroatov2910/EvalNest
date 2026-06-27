@@ -13,6 +13,7 @@ export default function DropdownMenu() {
           Profile
         </li>
         <li className="p-2 hover:bg-gray-100 cursor-pointer"  onClick={() => clicked('Settings')}>Settings</li>
+        <li className="p-2 hover:bg-gray-100 cursor-pointer"  onClick={() => clicked('Log Out')}>Log Out</li>
       </ul>
     </div>
   );

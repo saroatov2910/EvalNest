@@ -1,3 +1,4 @@
+'use client';
 import React from 'react'
 import UserNavBar from '../UserNavBar/page';
 import UserBody from '../UserBody/page';
